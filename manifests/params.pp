@@ -21,7 +21,7 @@ class adcli::params {
   $ad_join_os_service_pack   = undef
 
 
-  if $::osfamily == 'RedHat' and $::operatingsystemmajrelease < '6' {
+  if $::osfamily == 'RedHat' and $::operatingsystemmajrelease < '34' {
     fail("Unsupported platform: puppet-adcli does not currently support RedHat ${::operatingsystemmajrelease}")
   }
 }
