@@ -1,6 +1,6 @@
 {
   "name": "acjohnson-adcli",
-  "version": "0.1.0",
+  "version": "0.3.2",
   "author": "Aaron Johnson",
   "summary": "Install adcli package and Join Active Directory using adcli",
   "license": "GPL-3.0+",
@@ -10,7 +10,7 @@
   "dependencies": [
     {
       "name": "puppetlabs/stdlib",
-      "version_requirement": ">= 2.3.0 < 5.0.0"
+      "version_requirement": ">= 2.3.0 < 6.0.0"
     }
   ],
   "operatingsystem_support": [
