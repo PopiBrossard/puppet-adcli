@@ -44,7 +44,7 @@
 class adcli (
   String $ad_domain                           = $adcli::params::ad_domain,
   String $ad_join_username                    = $adcli::params::ad_join_username,
-  String $ad_join_password                    = $adcli::params::ad_join_password,
+  Variant[String, Sensitive[String]] $ad_join_password                    = $adcli::params::ad_join_password,
   String $ad_join_ou                          = $adcli::params::ad_join_ou,
   Optional[String] $ad_join_domain_controller = $adcli::params::ad_join_domain_controller,
   Optional[Array[String]] $ad_join_service_names        = $adcli::params::ad_join_service_names,
